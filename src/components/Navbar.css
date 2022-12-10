@@ -1,0 +1,28 @@
+.Navbar {
+  height: 50px;
+  margin-top: 0px;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 0px;
+
+  z-index: 100;
+}
+.activer {
+  background-color: black;
+}
+.item__Ma {
+  color: red;
+  font-size: 15px;
+  padding: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.item__Se {
+  cursor: pointer;
+}

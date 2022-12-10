@@ -1,0 +1,113 @@
+.MovieList {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 100;
+}
+.Movie {
+  background-color: black;
+}
+.MovieList > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+.MovieListAdmin {
+  width: 20%;
+  height: 500px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.Banner__item {
+  position: absolute;
+  margin-top: 10px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+}
+
+.info {
+  width: 35%;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  z-index: 12;
+  gap: 1rem;
+}
+.play,
+.MyList {
+  width: 70px;
+  height: 40px;
+  background-color: rgb(84, 75, 75);
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+.title {
+  width: 50%;
+  position: absolute;
+  left: 30px;
+  top: 300px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  z-index: 20;
+  text-align: center;
+}
+.overview {
+  width: 50%;
+  position: absolute;
+  left: 30px;
+  top: 600px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  z-index: 20;
+  text-align: center;
+}
+.sliderArrow {
+  max-width: 180px;
+  height: auto;
+  object-fit: cover;
+
+  transform: scale(1);
+}
+.sliderArrow:hover {
+  transform: scale(1.2);
+  z-index: 10;
+}
+.Detail {
+  display: flex;
+  flex-direction: row;
+}
+.DetailYoutubeItem {
+  width: 50%;
+  margin: 0px;
+  color: white;
+}
+.DetailItem {
+  width: 50%;
+  margin: 0px;
+}
+.Detailcolor {
+  color: white;
+}
+.ResultList {
+  width: 10%;
+
+  transform: scale(1);
+}
+.ResultList:hover {
+  transform: scale(1.2);
+  z-index: 10;
+}

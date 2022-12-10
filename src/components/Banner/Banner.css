@@ -1,0 +1,82 @@
+.Banner {
+  width: 100%;
+  height: 1000px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+h3 {
+  background-color: black;
+  color: aliceblue;
+  margin: 0px;
+}
+.Banner__item {
+  position: absolute;
+  margin-top: 10px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.info {
+  width: 35%;
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  z-index: 12;
+  gap: 1rem;
+}
+.play {
+  top: 500px;
+  width: 70px;
+  height: 40px;
+  background-color: rgb(84, 75, 75);
+  position: absolute;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  left: 2%;
+}
+.MyList {
+  left: 14%;
+  top: 500px;
+  width: 70px;
+  height: 40px;
+  background-color: rgb(84, 75, 75);
+  position: absolute;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+.title {
+  width: 50%;
+  position: absolute;
+  left: 30px;
+  top: 300px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  z-index: 20;
+  text-align: center;
+}
+.overview {
+  width: 50%;
+  position: absolute;
+  left: 30px;
+  top: 600px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  z-index: 20;
+  text-align: center;
+}
+.sliderArrow {
+  width: 100px;
+  height: 20%;
+  object-fit: cover;
+}
