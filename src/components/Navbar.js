@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Navbar = (props) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const navigate = useNavigate(); //Điều hướng về trang search khi sự kiện xãy ra
+  const navigate = useNavigate();
   const handleSearch = () => {
     navigate("/search");
   };

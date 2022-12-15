@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-//set API để chuyển sang các component cần dữ liệu
 const ApiHook = (requestUrl) => {
   const [netflix, setNetflix] = useState([]);
   const [xuHuong, setXuHuong] = useState([]);
@@ -28,7 +27,7 @@ const ApiHook = (requestUrl) => {
             poster_path: datafull[key].poster_path,
             title: datafull[key].title,
             overview: datafull[key].overview,
-            release_date: datafull[key].release_date,
+            release_date: datafull[key].release_date
           });
         }
         setNetflix(loadedMovies);
@@ -54,7 +53,7 @@ const ApiHook = (requestUrl) => {
     hai,
     kinhDi,
     langMang,
-    taiLieu,
+    taiLieu
   };
 };
 

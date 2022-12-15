@@ -18,25 +18,14 @@ function ResultList(props) {
   useEffect(() => {
     const fetchNetflixRandom = async () => {
       try {
-        const apiKey = "0cf6418c47e9ffd90270922737ebdff6";
-        const requestUrl = `https://api.themoviedb.org/3//movie/${youtube}/videos?api_key=${apiKey}`;
+        const requestUrl = `https://api.themoviedb.org/3//movie/${youtube}/videos?api_key=70edd4a54dd6738217aa55c712abe4b8`;
         const response = await fetch(requestUrl);
         const responseJson = await response.json();
         console.log(responseJson);
 
         const data = responseJson.results;
-        // const datafull = responseJson.results;
         const find = data.find((element) => element.official === true);
         console.log(find);
-        // const loadedMovies = [];
-        // for (const key in datafull) {
-        //   loadedMovies.push({
-        //     id: key,
-        //     backdrop_path: datafull[key].backdrop_path,
-        //     poster_path: datafull[key].poster_path,
-        //   });
-        // }
-        // setNetflix(loadedMovies);
         setNetflixRandom(find);
       } catch (error) {
         console.log("Fails", error.message);

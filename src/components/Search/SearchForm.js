@@ -2,7 +2,6 @@ import { useRef } from "react";
 import React from "react";
 
 import classes from "./SearchForm.module.css";
-//tạo form search
 const SearchForm = (props) => {
   const searchInputRef = useRef();
 
@@ -12,7 +11,7 @@ const SearchForm = (props) => {
     const enteredValue = searchInputRef.current.value;
 
     if (enteredValue.trim().length > 0) {
-      props.onEnterTask(enteredValue); //truyền từ khoá vào thẻ Search
+      props.onEnterTask(enteredValue); //từ khóa
     }
   };
 

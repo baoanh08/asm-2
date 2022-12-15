@@ -10,12 +10,11 @@ const Search = () => {
   const [query, setQuery] = useState("");
   const enterTaskHandler = (taget) => {
     setQuery(taget);
-  }; //sét lại từ khoá để truỳen vào API theo từ khoá tiềm kiếm
+  }; //reset
   const { netflix } = ApiHook(
-    `https://api.themoviedb.org/3/search/movie?api_key=0cf6418c47e9ffd90270922737ebdff6&language=en-US&query=${query}&page=1&include_adult=false`
+    `https://api.themoviedb.org/3/search/movie?api_key=70edd4a54dd6738217aa55c712abe4b8&language=en-US&query=${query}&page=1&include_adult=false`
   );
-  ApiHook(); //lấy Api về
-  console.log(netflix);
+  ApiHook();
 
   return (
     <div className="app">

@@ -19,7 +19,7 @@ const Original = (props) => {
     infinite: true,
     speed: 500,
     slidesToShow: 10,
-    slidesToScroll: 5,
+    slidesToScroll: 5
   };
   useEffect(() => {
     const fetchNetflixRandom = async () => {
@@ -31,18 +31,8 @@ const Original = (props) => {
         console.log(responseJson);
 
         const data = responseJson.results;
-        // const datafull = responseJson.results;
         const find = data.find((element) => element.official === true);
         console.log(find);
-        // const loadedMovies = [];
-        // for (const key in datafull) {
-        //   loadedMovies.push({
-        //     id: key,
-        //     backdrop_path: datafull[key].backdrop_path,
-        //     poster_path: datafull[key].poster_path,
-        //   });
-        // }
-        // setNetflix(loadedMovies);
         setNetflixRandom(find);
       } catch (error) {
         console.log("Fails", error.message);
